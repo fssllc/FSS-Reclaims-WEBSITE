@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FSS Reclaims - Recover Surplus Funds After Foreclosure</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            scroll-behavior: smooth;
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: radial-gradient(#dbeafe 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .section-title {
+            border-left: 4px solid #3b82f6;
+            padding-left: 1rem;
+        }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800">
+
+    <!-- Header --><header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div>
+                <a href="#" class="cursor-pointer">
+                    <h1 class="text-2xl font-bold text-blue-600">FSS Reclaims</h1>
+                    <p class="text-sm text-gray-500">A Department of Fresh Start Solution LLC</p>
+                </a>
+            </div>
+            <a href="#claim-form" class="hidden sm:inline-block bg-blue-600 text-white font-semibold px-5 py-2 rounded-lg hover:bg-blue-700 transition duration-300">
+                Start Your Free Review
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section --><main>
+        <section class="hero-pattern py-20 sm:py-32">
+            <div class="container mx-auto px-6 text-center">
+                <h2 class="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">Did You Lose Your Home to Foreclosure?</h2>
+                <p class="text-lg md:text-xl text-gray-600 max-w-3xl mx-auto mb-8">You may be legally entitled to thousands of dollars in surplus funds. We can help you reclaim what is rightfully yours.</p>
+                <div class="bg-white p-6 rounded-lg shadow-lg max-w-2xl mx-auto border border-blue-200">
+                     <h3 class="text-xl font-bold text-blue-700 mb-2">Our No-Risk Guarantee</h3>
+                     <p class="text-gray-700">You pay absolutely <span class="font-bold">no fee</span> unless we are successful in recovering your funds. If we don't win your claim, you owe us nothing. It's that simple.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Start Free Review Form Section --><section id="claim-form" class="py-16 bg-white">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl font-bold text-gray-900">Start Your Free Claim Review</h2>
+                     <p class="text-gray-600 mt-2">Fill out the form below for a no-obligation consultation. We'll review your case for free.</p>
+                </div>
+                <div class="max-w-2xl mx-auto bg-gray-50 p-8 rounded-lg shadow-md border">
+                    <form id="review-form">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="full-name" class="block text-sm font-medium text-gray-700">Full Name</label>
+                                <input type="text" name="full-name" id="full-name" placeholder="John Doe" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                            </div>
+                            <div>
+                                <label for="phone" class="block text-sm font-medium text-gray-700">Phone Number</label>
+                                <input type="tel" name="phone" id="phone" placeholder="(555) 123-4567" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                            </div>
+                        </div>
+                        <div class="mt-6">
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email Address</label>
+                            <input type="email" name="email" id="email" placeholder="you@example.com" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div class="mt-6">
+                            <label for="property-address" class="block text-sm font-medium text-gray-700">Full Property Address of Foreclosure</label>
+                            <textarea name="property-address" id="property-address" rows="3" placeholder="123 Main St, Anytown, USA 12345" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required></textarea>
+                        </div>
+                        <div class="mt-6">
+                            <label for="foreclosure-date" class="block text-sm font-medium text-gray-700">Approximate Date of Foreclosure</label>
+                            <input type="date" name="foreclosure-date" id="foreclosure-date" class="mt-1 block w-full px-3 py-2 bg-white border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-blue-500 focus:border-blue-500" required>
+                        </div>
+                        <div class="mt-8 text-center">
+                            <button type="submit" class="w-full sm:w-auto bg-blue-600 text-white font-semibold px-8 py-3 rounded-lg hover:bg-blue-700 transition duration-300 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500">
+                                Submit for Free Review
+                            </button>
+                        </div>
+                         <p class="text-xs text-gray-500 mt-4 text-center">By submitting this form, you agree to be contacted by FSS Reclaims. This is a free, no-obligation case review.</p>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Thank You Message Section --><section id="thank-you" class="py-16 bg-white hidden">
+            <div class="container mx-auto px-6">
+                <div class="max-w-2xl mx-auto bg-green-50 p-8 rounded-lg shadow-md border border-green-200 text-center">
+                    <svg class="mx-auto h-16 w-16 text-green-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                    <h2 class="mt-4 text-3xl font-bold text-gray-900">Thank You!</h2>
+                    <p class="mt-2 text-gray-600">Your information has been successfully submitted. We will review your case and contact you within 1-2 business days.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- The Problem Section --><section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="text-center mb-12">
+                     <h2 class="text-3xl font-bold text-gray-900">Why You Need an Expert</h2>
+                     <p class="text-gray-600 mt-2">Recovering foreclosure surplus funds is a complex and time-sensitive process.</p>
+                </div>
+                <div class="grid md:grid-cols-3 gap-8 text-center">
+                    <!-- Card 1: Time Sensitivity --><div class="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition-shadow">
+                        <div class="flex items-center justify-center h-16 w-16 bg-red-100 text-red-600 rounded-full mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Time is Running Out</h3>
+                        <p class="text-gray-600">Each state has a strict statute of limitations on these claims. If you miss the deadline, the government keeps your money permanently. The clock is already ticking.</p>
+                    </div>
+                    <!-- Card 2: Complexity --><div class="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition-shadow">
+                        <div class="flex items-center justify-center h-16 w-16 bg-blue-100 text-blue-600 rounded-full mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Complex Paperwork</h3>
+                        <p class="text-gray-600">The process requires specific legal documents, notarized affidavits, and proof of ownership. Navigating county bureaucracy is often overwhelming for individuals.</p>
+                    </div>
+                    <!-- Card 3: Success Rate --><div class="bg-white p-8 rounded-xl shadow-md border hover:shadow-lg transition-shadow">
+                        <div class="flex items-center justify-center h-16 w-16 bg-green-100 text-green-600 rounded-full mx-auto mb-4">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                        </div>
+                        <h3 class="text-xl font-semibold text-gray-800 mb-2">Avoid Costly Errors</h3>
+                        <p class="text-gray-600">We do this full-time. Many who try on their own get claims denied due to missing paperwork or procedural errors. We ensure your claim is filed correctly the first time.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- How It Works Section --><section class="py-16 bg-gray-50">
+             <div class="container mx-auto px-6">
+                <h2 class="text-3xl font-bold text-gray-900 mb-10 section-title">Our Simple 4-Step Process</h2>
+                <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Step 1 --><div class="flex items-start">
+                        <div class="text-3xl font-bold text-blue-300 mr-4">01</div>
+                        <div>
+                            <h3 class="font-semibold text-lg mb-2">We Contact You</h3>
+                            <p class="text-gray-600">Our team audits government records to locate surplus funds and identifies the rightful owners—people just like you.</p>
+                        </div>
+                    </div>
+                     <!-- Step 2 --><div class="flex items-start">
+                        <div class="text-3xl font-bold text-blue-300 mr-4">02</div>
+                        <div>
+                            <h3 class="font-semibold text-lg mb-2">Receive Your Info Packet</h3>
+                            <p class="text-gray-600">We send you a complete, no-obligation packet with official documents showing the funds and our service agreement for you to review.</p>
+                        </div>
+                    </div>
+                     <!-- Step 3 --><div class="flex items-start">
+                        <div class="text-3xl font-bold text-blue-300 mr-4">03</div>
+                        <div>
+                            <h3 class="font-semibold text-lg mb-2">We Handle the Hard Work</h3>
+                            <p class="text-gray-600">If you proceed, we manage the entire claims process—from filing complex paperwork to communicating with government agencies.</p>
+                        </div>
+                    </div>
+                     <!-- Step 4 --><div class="flex items-start">
+                        <div class="text-3xl font-bold text-blue-300 mr-4">04</div>
+                        <div>
+                            <h3 class="font-semibold text-lg mb-2">You Get Paid</h3>
+                            <p class="text-gray-600">The process typically takes 30-90 days. Once the funds are recovered, we send you a check for your share, less our success fee.</p>
+                        </div>
+                    </div>
+                </div>
+             </div>
+        </section>
+
+        <!-- Fee Structure Section --><section class="py-16 bg-white">
+            <div class="container mx-auto px-6 text-center">
+                 <h2 class="text-3xl font-bold text-gray-900">Transparent & Fair Pricing</h2>
+                <div class="mt-8 max-w-3xl mx-auto bg-blue-50 border-l-4 border-blue-500 text-blue-800 p-6 rounded-r-lg text-left">
+                    <p class="font-semibold text-lg">We operate on a contingency basis. This means we invest our time and resources to recover your money.</p>
+                    <ul class="list-disc list-inside mt-4 space-y-2">
+                        <li>There are <span class="font-bold">zero upfront costs</span> or out-of-pocket expenses for you.</li>
+                        <li>If we successfully recover your funds, our fee is <span class="font-bold">37%</span> of the total amount recovered.</li>
+                        <li>If we are unable to recover your funds for any reason, <span class="font-bold">you owe us absolutely nothing.</span></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Information Packet Section --><section class="py-16 bg-gray-50">
+            <div class="container mx-auto px-6">
+                <div class="lg:flex lg:items-center lg:space-x-12">
+                    <div class="lg:w-1/2">
+                        <h2 class="text-3xl font-bold text-gray-900 mb-4 section-title">Your Complete Information Packet</h2>
+                        <p class="text-gray-600 mb-6">When we contact you, we provide a transparent, comprehensive packet with everything you need to make an informed decision. There is no cost and no obligation.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span><span class="font-semibold">Official Court Documents</span> showing the exact surplus funds available.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span>A copy of the <span class="font-semibold">Foreclosure Sale Record</span> for your property.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span>Our clear and simple <span class="font-semibold">Service Agreement</span> for you to review.</span>
+                            </div>
+                            <div class="flex items-start">
+                                <svg class="h-6 w-6 text-green-500 mr-3 flex-shrink-0 mt-1" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7" /></svg>
+                                <span>Information about our <span class="font-semibold">Company and Credentials.</span></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lg:w-1/2 mt-10 lg:mt-0">
+                        <div class="bg-white p-8 rounded-lg shadow-lg border">
+                           <img src="https://i.imgur.com/UTTtjhO.jpeg" alt="Documents including official court papers, foreclosure sale record, service agreement, and company credentials with FSS Reclaims logo on a wooden desk." class="rounded-lg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <!-- Footer --><footer id="contact" class="bg-gray-800 text-white">
+        <div class="container mx-auto px-6 py-12">
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- About Column --><div>
+                    <h3 class="text-xl font-bold">FSS Reclaims</h3>
+                    <p class="text-gray-400 mt-2">A department of Fresh Start Solution LLC, dedicated to helping former homeowners recover assets that rightfully belong to them.</p>
+                </div>
+                <!-- Contact Info Column --><div>
+                    <h3 class="text-xl font-bold">Contact Us</h3>
+                    <div class="mt-4 space-y-4 text-gray-300">
+                        <p>
+                            <span class="font-semibold block text-gray-200">FSS Reclaims Department (Direct):</span>
+                            <a href="tel:720-410-9761" class="hover:text-blue-400">720-410-9761</a>
+                        </p>
+                        <p>
+                            <span class="font-semibold block text-gray-200">Email:</span>
+                            <a href="mailto:info@fssreclaims.com" class="hover:text-blue-400">info@fssreclaims.com</a>
+                        </p>
+                        <p>
+                             <a href="#" class="font-semibold block text-gray-200 hover:text-blue-400 transition-colors">Fresh Start Solution (Main Office):</a>
+                             <a href="tel:833-377-8278" class="hover:text-blue-400">833-377-8278</a> (Text Friendly)
+                        </p>
+                    </div>
+                </div>
+                <!-- Address Column --><div>
+                    <h3 class="text-xl font-bold">Our Office</h3>
+                    <p class="mt-4 text-gray-300">
+                        <a href="https://www.google.com/maps/search/?api=1&query=2590+Welton+Street+Suite+200+Denver+Co+80205" target="_blank" class="hover:text-blue-400">
+                            2590 Welton Street<br>
+                            Suite 200<br>
+                            Denver, CO 80205
+                        </a>
+                    </p>
+                </div>
+            </div>
+            <div class="mt-10 pt-8 border-t border-gray-700 text-center text-gray-500 text-sm">
+                <p>&copy; 2024 FSS Reclaims | All Rights Reserved. | <a href="terms.html" target="_blank" class="hover:text-blue-400">Terms & Conditions</a></p>
+                <p class="mt-2">Disclaimer: FSS Reclaims is not a law firm and does not provide legal advice. We are a private auditing company that specializes in the recovery of surplus funds.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        const form = document.getElementById('review-form');
+        const formSection = document.getElementById('claim-form');
+        const thankYouSection = document.getElementById('thank-you');
+        const submitButton = form.querySelector('button[type="submit"]');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault();
+
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbztAqjQSVUYiPhmGeRje3ZIukgJMYW0NsHOeKUV8xbObQGy2qC4pnrjLpoqFQbcjuPb1w/exec';
+
+            const originalButtonText = submitButton.innerHTML;
+            submitButton.disabled = true;
+            submitButton.innerHTML = `
+                <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white inline-block" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+                  <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+                  <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+                </svg>
+                Submitting...`;
+            
+            const formData = new FormData(form);
+            fetch(scriptURL, { method: 'POST', body: formData })
+                .then(response => {
+                    if (response.ok) {
+                        formSection.classList.add('hidden');
+                        thankYouSection.classList.remove('hidden');
+                        window.scrollTo({ top: thankYouSection.offsetTop - 80, behavior: 'smooth' });
+                        form.reset();
+                    } else {
+                        throw new Error('Network response was not ok.');
+                    }
+                })
+                .catch(error => {
+                    console.error('Error!', error.message);
+                    const errorDiv = document.createElement('div');
+                    errorDiv.textContent = 'An error occurred while submitting. Please try again.';
+                    errorDiv.className = 'mt-4 text-center text-sm text-red-600';
+                    form.appendChild(errorDiv);
+                    setTimeout(() => errorDiv.remove(), 5000);
+                })
+                .finally(() => {
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalButtonText;
+                });
+        });
+
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const href = this.getAttribute('href');
+                
+                if (href === '#') {
+                    window.scrollTo({
+                        top: 0,
+                        behavior: 'smooth'
+                    });
+                } else {
+                    const targetElement = document.querySelector(href);
+                    if (targetElement) {
+                        const headerOffset = 80; 
+                        const elementPosition = targetElement.getBoundingClientRect().top;
+                        const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+                
+                        window.scrollTo({
+                            top: offsetPosition,
+                            behavior: 'smooth'
+                        });
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
