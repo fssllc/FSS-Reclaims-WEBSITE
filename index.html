@@ -28,7 +28,7 @@
     <!-- Header --><header class="bg-white shadow-sm sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <div>
-                <a href="#" class="cursor-pointer">
+                <a href="#" class="cursor-pointer js-reset-home">
                     <h1 class="text-2xl font-bold text-blue-600">FSS Reclaims</h1>
                     <p class="text-sm text-gray-500">A Department of Fresh Start Solution LLC</p>
                 </a>
@@ -213,7 +213,7 @@
                     </div>
                     <div class="lg:w-1/2 mt-10 lg:mt-0">
                         <div class="bg-white p-8 rounded-lg shadow-lg border">
-                           <img src="https://i.imgur.com/UTTtjhO.jpeg" alt="Documents including official court papers, foreclosure sale record, service agreement, and. company credentials with FSS Reclaims logo on a wooden desk." class="rounded-lg">
+                           <img src="https://i.imgur.com/UTTtjhO.jpeg" alt="Documents including official court papers, foreclosure sale record, service agreement, and company credentials with FSS Reclaims logo on a wooden desk." class="rounded-lg">
                         </div>
                     </div>
                 </div>
@@ -225,7 +225,7 @@
         <div class="container mx-auto px-6 py-12">
             <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- About Column --><div>
-                    <a href="#" class="cursor-pointer hover:text-blue-400 transition-colors">
+                    <a href="#" class="cursor-pointer hover:text-blue-400 transition-colors js-reset-home">
                         <h3 class="text-xl font-bold">FSS Reclaims</h3>
                     </a>
                     <p class="text-gray-400 mt-2">A department of Fresh Start Solution LLC, dedicated to helping former homeowners recover assets that rightfully belong to them.</p>
@@ -242,7 +242,7 @@
                             <a href="mailto:info@fssreclaims.com" class="hover:text-blue-400">info@fssreclaims.com</a>
                         </p>
                         <p>
-                             <a href="https://funnel.fssllc.co" target="_blank" class="font-semibold block text-gray-200 hover:text-blue-400 transition-colors">Fresh Start Solution (Main Office):</a>
+                             <a href="https://funnel.fssllc..co" target="_blank" class="font-semibold block text-gray-200 hover:text-blue-400 transition-colors">Fresh Start Solution (Main Office):</a>
                              <a href="tel:833-377-8278" class="hover:text-blue-400">833-377-8278</a> (Text Friendly)
                         </p>
                     </div>
@@ -274,8 +274,8 @@
         form.addEventListener('submit', e => {
             e.preventDefault();
 
-            // This is the full, correct URL you provided in the comment
-            const scriptURL = 'https://script.google.com/macros/s/AKfycbwwFq_XTrSeS-kHe-9gpfBS_7dD2zrNqamuhIaI5mN7CLtSxx5YaLsXOM1Z4IdqrczpYw/exec';
+            // This is the new, correct URL you provided
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzT2c77xaUPTNWlFHfm9oxfJFj5aguuvdWS30jZjY9E8X1AHH_JJ3c5xGsnXe2h_415Ig/exec';
 
             const originalButtonText = submitButton.innerHTML;
             submitButton.disabled = true;
@@ -337,8 +337,25 @@
                 }
             });
         });
+
+        // Add a new listener for the home links to reset the page
+        document.querySelectorAll('.js-reset-home').forEach(link => {
+            link.addEventListener('click', function (e) {
+                // We don't need e.preventDefault() here because the smooth scroll listener already handles it.
+                
+                // Show the form section
+                if (formSection) {
+                    formSection.classList.remove('hidden');
+                }
+                
+                // Hide the thank you section
+                if (thankYouSection) {
+                    thankYouSection.classList.add('hidden');
+                }
+                
+                // The smooth-scroll listener will handle scrolling to the top.
+            });
+        });
     </script>
 </body>
 </html>
-
-
